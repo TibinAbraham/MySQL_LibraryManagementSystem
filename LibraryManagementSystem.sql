@@ -77,6 +77,7 @@ VALUES(1,'Johnson Sebastian','Pampady_KTM','2021-12-15'),
     (3,'Ajay Saji','Punnavely_PAT','2021-11-01'),
     (4,'Melvin Mathew','Mallappally_PAT','2021-09-01');
 
+
 INSERT INTO Books (ISBN,Book_title,Category,Rental_Price,Status,Author,Publisher)
 VALUES(101,'Data Science','Science & Tech',550,'yes','ABC','XYZ'),
 (102,'Technology','Fiction',450,'yes','ABCD','XYZA'),
@@ -85,11 +86,11 @@ VALUES(101,'Data Science','Science & Tech',550,'yes','ABC','XYZ'),
 (105,'Untold','History',350,'yes','LYYABC','LYYXYZ');
 
 INSERT INTO IssueStatus (Issue_Id,Issued_cust,Issued_book_name,Issue_date,Isbn_book)
-VALUES ((1,1,'Data Science','2022-01-10',101),
-    (2,2,'Technology','2022-03-05',102),
-    (3,3,'Story','2023-04-06',103)
-    (4,4,'Story','2023-06-06',104);
-    
+VALUES (1,1,'Data Science','2022-01-10',101),
+  (2,2,'Technology','2023-06-06',102),
+  (3,3,'Story','2023-04-06',103),
+  (4,4,'Story','2023-05-05',104);
+
 INSERT INTO ReturnStatus (Return_Id,Return_cust,Return_book_name,Return_date,Isbn_book2)
 VALUES(1,1,'Data Science','2022-02-05',101),
     (2,2,'Story','2022-04-15',103);
@@ -146,16 +147,6 @@ SELECT Branch_no, COUNT(*) AS Employee_Count
 FROM Employee
 GROUP BY Branch_no
 HAVING Employee_Count > 5;
-
-
-
-
-
-
-
-
-
-
 
 
     
